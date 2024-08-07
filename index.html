@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Univeristy of South Africa</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="media.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="left">
+          <h1>University <span>of South Africa</span></h1>
+        </div>
+        <div class="bottom">
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">More</a>
+        </div>
+        <div class="right">
+          <div class="loginForm">
+            <button type="button">Login</button>
+            <button type="button">Register</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section1">
+      <div class="container">
+        <div class="left">
+          <h1 class="wow animate__animated animate__fadeInDown">
+            Get ready for the <span>future</span>
+          </h1>
+          <p
+            class="wow animate__animated animate__zoomIn"
+            style="animation-delay: 0.3s"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            luctus semper tortor, vitae pellentesque ex tincidunt in. Aliquam
+          </p>
+        </div>
+
+        <div class="right">
+          <img
+            src="https://australianvisa.ru/wp-content/uploads/3/c/9/3c9d508557eb161ffbd1909f29939fee.jpeg"
+            alt=""
+            class="wow animate__animated animate__zoomIn"
+            style="animation-delay: 0.5s"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="container">
+        <div class="left">
+          <h1 class="wow animate__animated animate__fadeInDown">
+            If you want to <span>study</span>
+          </h1>
+          <button
+            type="button"
+            id="startButton"
+            onclick="start()"
+            class="wow animate__animated animate__zoomIn"
+            style="animation-delay: 0.3s"
+          >
+            Get Started
+          </button>
+        </div>
+        <div class="right" id="right">
+          <form action="" class="wow animate__animated animate__fadeInLeft">
+            <input
+              type="text"
+              name=""
+              id="inputName"
+              placeholder="Name"
+              required
+            />
+            <input
+              type="number"
+              name=""
+              id="inputAge"
+              placeholder="Age"
+              required
+            />
+            <input
+              type="text"
+              name=""
+              id="inputNumber"
+              placeholder="Number"
+              required
+            />
+            <button type="button" onclick="addStudent()" id="addButton">
+              AddStudent
+            </button>
+            <button type="button" onclick="editStudent()" id="renameButton">
+              Edit
+            </button>
+          </form>
+          <table
+            border="2"
+            width="100%"
+            cellspacing="15px"
+            class="wow animate__animated animate__fadeInRight"
+            style="animation-delay: 0.3s"
+          >
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Number</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+          <div id="error"></div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      new WOW().init();
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
